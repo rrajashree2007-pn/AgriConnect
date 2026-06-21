@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriConnect Services</title>
+    <link rel="icon" href="https://copilot.microsoft.com/th/id/BCO.db174fe8-fd2b-49b8-9d63-09ced833a041.png">
+    <style>
+         *{
+        margin:0px;
+        padding: 0px;
+        font-family:cursive;
+       }
+       section{
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYKOiPK5UCnAg0Umano8smMZrvWmSn6ScRS15ZBS2CfZE3fi4d3F5e3Ag&s=10");
+        background-attachment: fixed;
+        background-position: cover;
+        background-size: cover;
+    }
+       h1{
+        padding: 10px;
+       }
+       nav{
+        position: fixed;
+        top:0px;
+        background-color: rgba(0, 0, 0, 0.8);
+        height: 80px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        z-index:1000;
+       }
+       nav ul{
+        padding: 20px;
+        list-style: none;
+        display: flex;
+       }
+       nav ul li{
+        padding: 10px 30px;
+        display: block;
+       }
+       nav ul li a{
+        color:aliceblue;
+        text-decoration: none;
+        
+       }
+       nav ul li a:hover{
+        background-color: cadetblue;
+        border-style: hidden;
+        border-radius: 10px;
+        padding:8px;
+        color: aliceblue;
+       }
+       .bg-text{
+        text-align: center;
+        margin-top: 80px;
+        color:indigo;
+        text-shadow: 2px 2px 2px;
+       }
+       .bg-card{
+        display: flex;
+        flex-wrap: wrap;
+        padding:30px;
+        gap:30px;
+        margin-left: 150px;
+       }
+       .bg-card .card{
+        justify-content: center;
+        text-align: center;
+        margin-top:20px;
+        margin-bottom: 30px;
+        padding:10px;
+        border-radius: 20px;
+        opacity:0;
+        animation:services 4s 4s ease-out forwards;
+        animation-timeline: view();
+        animation-range:entry 0% cover 40%;
+        box-shadow: 3px 3px 3px forestgreen;
+       }
+       .bg-card img{
+        border-radius: 10px;
+       }
+    
+       .bg-card h3{
+        color:teal;
+        text-shadow: 2px 2px 2px;
+       }
+        @keyframes services{
+        from{
+            opacity:0;
+            transform: translateX(30px);
+        }
+        to {
+            opacity:1;
+        }
+       }
+       footer{
+        background-color: rgba(0, 0, 0, 0.8);
+        color: aliceblue;
+        height: 50px;
+        text-align: center;
+        justify-content: center;
+       }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+</head>
+<body>
+    <nav>
+        <h1 class="logo" style="color:whitesmoke;">🌾AgriConnect</h1>
+
+        <ul>
+            <li><a href="index.html" target="_blank" >Home</a></li>
+            <li><a href="features.html" target="_blank">Features</a></li>                   
+            <li><a href="services.html" target="_blank">Services</a></li>
+            <li><a href="schemes.html" target="_blank">Schemes</a></li>
+            <li><a href="contact.html" target="_blank">Contact</a></li>
+            <li><a href="login.html" target="_blank">Login</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="bg-text">
+            <h1>AgriConnect Services</h1>
+            <p>Empowering farmers through technology, training, and sustainable solutions.</p>
+        </div>
+        <div class="bg-card">
+                <div class="card" style="width:300px;">
+                    <img class="card-img" src="https://images.stockcake.com/public/e/e/3/ee39d4df-6e60-4560-9e0c-a71508de39e3_large/smart-farming-technology-stockcake.jpg">
+                    <h3 class="card-title">Smart Farming</h3>
+                    <p class="card-text">AI-powered crop productivity recommendations.</p>
+                </div>
+                <div class="card" style="width:300px;">
+                    <img class="card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1BfixkqjEAO1QFeNDZH7Fvt8Drw3lucOv6w&s">
+                    <h3 class="card-title">Food Supply Chain</h3>
+                    <p class="card-text">Connect farmers directly with markets and consumers.</p>
+                </div>
+                <div class="card" style="width:300px;">
+                    <img class="card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBZq0AYdSbKY9H5ZN9ocneIOOJHGLqOl_lrw&s">
+                    <h3 class="card-title">Water Management</h3>
+                    <p class="card-text">Efficient irrigation and water conservation practices.</p>
+                </div>
+                <div class="card" style="width:300px;">
+                    <img class="card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF8Lg5XMZTME8zfIFQ_gECpffGoTJMMbKdXw&s">
+                    <h3 class="card-title">Agri Training</h3>
+                    <p class="card-text">Workshops and skill development for farmers.</p>
+                </div>
+                <div class="card" style="width:300px;">
+                    <img class="card-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZzp6ZBHto3FUXxyQj97vmSUJ5WLitRCdI5_qzgr8xFdwQLsOaDTjq6OG3NItQZY81PSfc9USCR6D0px9U6bAUchAx9Df9sRUsk5ZcJ06yaPoNHzrw37I1irK9bazuTqnWE1t0H55EDyEN/s678/rurall.jpg">
+                    <h3 class="card-title">Rural Development</h3>
+                    <p class="card-text">Support village growth through technology and awareness.</p>
+                </div>
+                <div class="card" style="width:300px;">
+                    <img class="card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhOIv6qGHPQShaosR2IIh0H9CCBkSCtulQVw&s">
+                    <h3 class="card-title">Storage Solutions</h3>
+                    <p class="card-text">Support village growth through technology and awareness.</p>
+                </div>
+                <div class="card" style="width:300px;">
+                    <img class="card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxZ1wzEG3Oxvy1BNjYMxRwejr7646DQj47vQ&s">
+                    <h3 class="card-title">Logistics Support</h3>
+                    <p class="card-text">Transport crops efficiently from farms to markets.</p>
+                </div>
+                <div class="card" style="width:300px;">
+                    <img class="card-img" src="https://eng.ruralvoice.in/uploads/images/2025/07/image_750x_6868e45c3f879.jpg">
+                    <h3 class="card-title">Export Assistance</h3>
+                    <p class="card-text">Help farmers access international markets.</p>
+                </div>
+                <div class="card" style="width:300px;">
+                    <img class="card-img" src="data:image/jpeg;base64,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">
+                    <h3 class="card-title">Financial Advisory</h3>
+                    <p class="card-text">Guidance on loans, subsidies, and investments for farmers.</p>
+                </div>
+        </div>
+            
+    </section>
+    
+    
+
+
+
+
+
+
+
+
+
+    <footer>
+        © 2026 AgriConnect | Smart Agriculture & Rural Development Portal
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</body>
+</html>
